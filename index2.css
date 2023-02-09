@@ -1,0 +1,60 @@
+
+/* WELCOME TO MDDM Collage */
+ #WELCOME {
+   padding: 6vw 8vw 6vw 8vw;
+width: 80%;
+height: 100%;
+background-size:cover ;
+background-position: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: larger;
+}
+#WELCOME .form{
+   background: palegoldenrod;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+   box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  } 
+  #WELCOME  ul li{
+   width: 120px;
+  margin: 15px;
+  padding: 15px; 
+  }
+  .active,  .form ul li:hover
+  {
+    background-color:slateblue;
+    border-radius: 3px;
+  }
+  
+  .form ul li  {
+   display: block;
+  } 
+  .form ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  .form{
+      display: none;
+     }
+   .form ul li :hover{
+    border-left: 3px solid #2c3e50;
+   }
+   .form ul li:hover >ul{
+      display: block;
+
+     }
+     .form ul li >ul{
+      display: none;
+     }
+     .form ul li .btn{
+      margin-bottom: 30px;
+      
+     }
+     

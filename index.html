@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRAB UNIVERSITY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Administration</li>
+        <li>Academic</li>
+        <li>Programme/Course</li>
+        <li>IQAC</li>
+        <li>Result</li>
+        <li>Collages</li>
+        <li>Notice</li>
+        <li>Contact us</li>
+        <li>Student Services</li>
+      </ul>
+    </nav>
+    <!-- Home -->
+    <section id="home"></section>
+
+    <!-- Registration -->
+    <section id="registration">
+      <div class="form">
+        <h1>Internal Marks Submission System</h1>
+        <input
+          type="text"
+          placeholder=" CollageName"
+          name=""
+          id="collageName" 
+          />
+        <input type="email" placeholder="Email-id" name="" id="Email-id" >
+        <input type="password" placeholder="password" name="" id="password">
+        <div class="checkbox">
+          <input type="checkbox">
+        </div>
+        <div class="btn">
+          <input
+            type="submit"
+            value="Login"
+            class="submit-btn"
+            type="checkbox"
+            onclick="submitForm()"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function submitForm() {
+        const emailInput = document.getElementById("Email-id");
+        const passwordInput = document.getElementById("password");
+        const collageName = document.getElementById("collageName");
+
+
+        if (
+          collageName.value == "MDDM" &&
+          emailInput.value === "anishamishra2134@gmail.com" &&
+          passwordInput.value === "anisha@2000"
+        ) {
+          alert("Login successful");
+          window.location.href = "index2.html";
+        } else {
+          alert("Login unsuccessful");
+        }
+      }
+    </script>
+  </body>
+</html>

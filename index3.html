@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submission</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openpopup()">submit</button>
+      <div class="popup" id="popup">
+        <img src="/images/mark.webp" >
+        <h2>Thank You !</h2>
+        <p>Your details has been successfuly submitted. Thanks!</p>
+        <button type="button" onclick="closepopup()">Ok</button>
+        <div>
+            <h1 id="blink">You can Edit your form within 24 hours </h1>
+            <script>
+                timer();
+                function timer(){
+                    let blink = document.getElementById("blink");
+                    blink.style.opacity = blink.style.opacity == 0 ? 1:0;
+                    setTimeout(timer,500);
+                }
+            </script>
+          </div>
+      </div>
+     
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openpopup(){
+          popup.classList.add("open-popup");  
+        }
+        function closepopup(){
+          popup.classList.remove("open-popup");  
+        }
+    </script>
+</body>
+</html>
